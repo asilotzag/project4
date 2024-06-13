@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{ 
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Ubuntu", sans-serif;
+}
+section{
+  min-height: 100vh;
+  background: url(./bg-intro-desktop.png) rgb(227, 90, 108) ;
+}
+.container{
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+}
+.row {
+  display: grid;
+ grid-template-columns: repeat(2,1fr);
+ min-height: 100vh;
+ align-items: center;
+ justify-content: center;
+ column-gap: 1rem;
+}
+
+.container .row .col1 h1 {
+  font-size: 35px;
+  color: aliceblue;
+}
+.container .row .col1{
+  padding: 5rem;
+  
+}
+.container .row .col1 p{
+  line-height: 1.5;
+  color: aliceblue;
+  margin-top: 2rem;
+  opacity: 0.9;
+}
+.container .row .col2 .p1 {
+  background-color: rgb(115, 44, 119);
+  color: aliceblue;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 8px 4px rgba(0, 0, 0, 0.253);
+  margin-bottom: 19px;
+  text-align: center;
+}
+.container .row .col2 form {
+  background-color: rgb(255, 255, 255);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 4px rgba(0, 0, 0, 0.253);
+}
+.col2 form input {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 8px;
+  border: 1px solid rgb(16, 3, 93);
+  border-radius: 5px;
+}
+
+.container .row .col2 form input:focus {
+outline: 1.6px solid rgb(76, 67, 162);
+}
+.container .row .col2 form button[type="submit"] { 
+  background-color: rgb(50, 183, 139);
+  width: 100%;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1.2px solid  rgb(56, 205, 155);
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.354);
+  margin-bottom: 17px;
+  color: aliceblue;
+ font-weight: 700;
+
+}
+.container .row .col2 form .p2 {
+  font-size: 13px;
+  opacity: 0.5;
+  text-align: center;
+}
+.container .row .col2 form .p2 a {
+  text-decoration: none;
+  color:rgb(248, 41, 69) ;
+  font-weight: 600;
+}
+@media (max-width: 700px) {
+
+  .row {
+    grid-template-columns: 1fr;
+  }
+ 
+  .container {
+    padding: 1rem;
+  }
+}
